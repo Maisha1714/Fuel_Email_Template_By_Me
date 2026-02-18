@@ -1,0 +1,197 @@
+<!-- Welcome to fuel AI Template -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Fuel AI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 0;
+            background-color: #f4f4f4;
+            font-family: Inter, Arial, sans-serif;
+        }
+
+        .card {
+            max-width: 672px;
+            margin: 0 auto;
+            border-radius: 0 0 14px 14px;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.12);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: 0px 16px 40px rgba(15, 23, 42, 0.18);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            padding: 10px 24px;
+            text-align: center;
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0px 0px 100px 20px rgba(0, 194, 255, 0.45);
+
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: #0f172a;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 28px;
+            color: #334155;
+            margin-bottom: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #00C2FF;
+            color: #ffffff;
+            width: 187px;
+            padding: 12px 0px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 32px;
+            box-shadow: 0px 8px 20px rgba(0, 194, 255, 0.45);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 12px rgba(0, 194, 255, 0.25);
+            transform: translateY(1px);
+        }
+
+        .helper-text {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.15px;
+            color: #62748E;
+            margin-bottom: 8px;
+        }
+
+        .link {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+            color: #00C2FF;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        .user-box {
+            width: 236px;
+            height: 54px;
+            background-color: #F8FAFC;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.15px;
+        }
+
+        .user-label {
+            font-weight: 500;
+            color: #0f172a;
+        }
+
+        .user-email {
+            font-weight: 400;
+            color: #62748E;
+        }
+
+        .welcome-again {
+            font-size: 12px;
+            margin-top: 20px;
+            letter-spacing: -0.31px;
+            color: #45556C;
+            margin-bottom: 32px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #F8FAFC;
+            padding: 24px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            color: #90A1B9;
+            border-top: 1px solid rgb(220, 220, 220);
+
+        }
+
+        .footer a {
+            color: #90A1B9;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="icon">
+                <!-- place cdn url icon or whatever public url we have -->
+            </div>
+
+            <h1>Welcome to Fuel AI!</h1>
+
+            <div class="subtitle">
+                Click below to verify your account and get started with the future of AI.
+            </div>
+
+            <a href="{{verifyLink}}" class="button">
+                Verify Account
+            </a>
+
+            <div class="helper-text">
+                To easily log in later, save this URL:
+            </div>
+
+            <a href="https://platform.fuelai.com/login" class="link">
+                https://platform.fuelai.com/login
+            </a>
+
+            <div class="user-box">
+                <span class="user-label">Username:</span>
+                <span class="user-email">{{user@example.com}}</span>
+            </div>
+
+            <div class="welcome-again">
+                Again, welcome to Fuel AI!
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>© 2026 Fuel AI Inc. All rights reserved.</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
